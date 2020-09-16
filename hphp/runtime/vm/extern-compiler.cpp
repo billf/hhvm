@@ -25,6 +25,7 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
+#include <folly/compression/Zstd.h>
 #include <folly/DynamicConverter.h>
 #include <folly/json.h>
 #include <folly/FileUtil.h>

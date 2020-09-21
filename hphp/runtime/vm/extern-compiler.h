@@ -30,7 +30,7 @@ struct FuncTable;
 
 struct SHA1;
 
-struct BadCompilerException : Exception {
+struct BadCompilerException final : Exception {
   explicit BadCompilerException(const std::string& what) : Exception(what) {}
   template<class... A>
   explicit BadCompilerException(A&&... args)
